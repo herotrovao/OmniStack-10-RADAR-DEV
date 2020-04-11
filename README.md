@@ -32,38 +32,31 @@ Já no aplicativo, desenvolvido em React Native, foi destinado para a busca dos 
 - [Node.js](https://nodejs.org/en/)
 - [Express](https://expressjs.com/pt-br/)
 - [Nodemon](https://www.npmjs.com/package/nodemon)
-- [Knex](http://knexjs.org/)
-- [SQLite3](https://www.sqlite.org/version3.html)
-- [Celebrate](https://www.npmjs.com/package/celebrate)
-- [Jest](https://jestjs.io/pt-BR/)
-- [Cross-Env](https://www.npmjs.com/package/cross-env)
-- [Supertest](https://www.npmjs.com/package/supertest)
+- [MongoDB](https://www.npmjs.com/package/mongoose)
+- [Cors](https://www.npmjs.com/package/cors)
 
 #### Comandos Back-End (NodeJS)
 ```bash
-$ yarn init -y (start project)
+$ yarn init -y
 $ yarn add express (framework)
-$ node index.js (start application)
-$ yarn add nodemon -D (Reload application)
-$ yarn add knex (Query Builder)
-$ yarn add sqlite3 (Database)
-$ npx knex migrate:make create_ongs (create migrations)
-$ npx knex migrate:latest (execute migrations)
-$ npx knex (list commands knex)
-$ yarn add celebrate (validation - integrates validation with express)
-$ yarn add jest (TDD)
-$ npx jest --init (Execute init jest)
-$ yarn add cross-env (Run scripts that set and use environment variables across platforms)
-$ yarn add supertest (Test Request)
-$ npm test (Execute Test)
+$ yarn add nodemon -D
+$ yarn nodemon index.js
+$ yarn add mongoose (commuction mongodb)
+$ yarn add cors
 ```
+### DOCKER (MongoDB)
+- docker ps images (view images)
+- docker pull mongodb (downloads images)
+- docker run --name mongodb -p 27017:27017 -d mongo (Create container)
+- docker ps -a (View container in execute)
+- Open MongoDB Compass
+- docker exec -it mongodb mongo admin (Acess container mongodb in docker)
 
 ### Front-End (ReactJS)
 - [React](https://reactjs.org)
 - [React Icons](https://www.npmjs.com/package/react-icons)
 - [Axios](https://www.npmjs.com/package/axios)
 - [React-router-dom](https://www.npmjs.com/package/react-router-dom)
-- [Intl](https://www.npmjs.com/package/intl)
 
 ### Comandos Front-End (ReactJS)
 ```bash
@@ -79,10 +72,11 @@ $ yarn add axios (Connect backend - Client HTTP)
 ## Mobile (React Native)
 - [React Native](https://facebook.github.io/react-native/)
 - [Expo](https://expo.io/)
-- [Expo Constants](https://www.npmjs.com/package/expo-constants)
-- [Expo Mail Composer](https://www.npmjs.com/package/expo-mail-composer)
 - [Axios](https://www.npmjs.com/package/axios)
-- [Intl](https://www.npmjs.com/package/intl)
+- [@react-navigation/native](https://www.npmjs.com/package/@react-navigation/native)
+- [react-native-maps](https://www.npmjs.com/package/react-native-maps)
+- [expo-location](https://www.npmjs.com/package/expo-location)
+- [react-native-webview](https://www.npmjs.com/package/react-native-webview)
 
 ### Comandos Front-End (React Native)
 ```bash
@@ -90,10 +84,13 @@ $ yarn add -g expo-cli  (install expo global)
 $ expo init mobile (create project)
 $ Install expo in android/IOS
 $ yarn start (start application)
-$ expo install expo-constants (package)
-$ expo install expo-mail-composer (mail expo)
+$ expo install react-native-maps (maps)
+$ expo install expo-location (location user)
+$ expo install react-native-webview (mail expo)
 $ yarn add axios (Connect backend - Client HTTP)
-$ yarn add intl (FormatNumber)
+$ yarn add @react-navigation/native
+$ expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+$ yarn add @react-navigation/stack
 ```
 
 ## :information_source: Como usar ?

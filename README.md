@@ -34,6 +34,7 @@ Já no aplicativo, desenvolvido em React Native, foi destinado para a busca dos 
 - [Nodemon](https://www.npmjs.com/package/nodemon)
 - [MongoDB](https://www.npmjs.com/package/mongoose)
 - [Cors](https://www.npmjs.com/package/cors)
+- [Docker](https://www.docker.com/)
 
 #### Comandos Back-End (NodeJS)
 ```bash
